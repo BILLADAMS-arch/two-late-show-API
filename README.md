@@ -56,27 +56,27 @@ late-show-api-challenge/
  1. Clone the Repository
 
 ``bash
-git clone https://github.com/your-username/late-show-api.git
-cd late-show-api
+`git clone https://github.com/BILLADAMS-arch/two-late-show-API`
+`cd late-show-api`
 
  2. Create a virtual Environment
-python3 -m venv venv
-source venv/bin/activate  # or source venv/bin/activate.fish
+`python3 -m venv venv`
+`source venv/bin/activate  # or source venv/bin/activate.fish`
 
  3. Install Dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
  4. Set Environment Variables
-FLASK_APP=server/app.py
-FLASK_ENV=development
-DATABASE_URL=postgresql://username:password@localhost:5432/late_show_db
-JWT_SECRET_KEY=your_secret_key
+`FLASK_APP=server/app.py`
+`FLASK_ENV=development`
+`DATABASE_URL=postgresql://username:password@localhost:5432/late_show_db`
+`JWT_SECRET_KEY=your_secret_key`
 
  5. Run Migrations and Seed
-export FLASK_APP=server/app.py
-export PYTHONPATH=.
-flask db upgrade
-python3 server/seed.py
+`export FLASK_APP=server/app.py`
+`export PYTHONPATH=.`
+`flask db upgrade`
+`python3 server/seed.py `
 
 ## API Routes
 
