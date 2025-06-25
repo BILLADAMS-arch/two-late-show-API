@@ -27,7 +27,7 @@ The **Late Show API** is a RESTful Flask backend for managing a fictional talk s
 ---
 
 ## Project Structure
-
+```bash
 late-show-api-challenge/
 ├── server/
 │ ├── app.py
@@ -48,14 +48,13 @@ late-show-api-challenge/
 ├── .env
 └── Pipfile / requirements.txt
 
-
+```
 ---
 
 ## Setup Instructions
 
  1. Clone the Repository
 
-``bash
 `git clone https://github.com/BILLADAMS-arch/two-late-show-API`
 `cd late-show-api`
 
