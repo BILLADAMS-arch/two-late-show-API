@@ -55,7 +55,7 @@ late-show-api-challenge/
 
  1. Clone the Repository
 
-```bash
+``bash
 git clone https://github.com/your-username/late-show-api.git
 cd late-show-api
 
@@ -78,7 +78,7 @@ export PYTHONPATH=.
 flask db upgrade
 python3 server/seed.py
 
-API Routes
+## API Routes
 
 🔹 Users
 Method	
