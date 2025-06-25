@@ -1,5 +1,6 @@
 from server.models import db
 from werkzeug.security import generate_password_hash, check_password_hash
+from sqlalchemy.orm import validates 
 
 class User(db.Model):
     __tablename__ = 'users'

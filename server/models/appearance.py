@@ -1,4 +1,5 @@
 from server.models import db
+from sqlalchemy.orm import validates 
 
 class Appearance(db.Model):
     __tablename__ = 'appearances'
@@ -20,5 +21,3 @@ class Appearance(db.Model):
 
     def __repr__(self):
         return f"<Appearance Guest: {self.guest_id} Episode: {self.episode_id} Rating: {self.rating}>"
-
-
