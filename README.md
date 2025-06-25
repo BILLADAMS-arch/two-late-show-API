@@ -76,31 +76,38 @@ late-show-api-challenge/
 `export PYTHONPATH=.`
 `flask db upgrade`
 `python3 server/seed.py `
+Note: seed.py populates the database with sample users, guests, episodes, and appearances for testing and development purposes.
 
 ## API Routes
 
-🔹 Users
-Method	
-POST	
-POST	
+### 🔐 Users
+| Method | Endpoint        | Description       |
+|--------|-----------------|-------------------|
+| POST   | `/register`     | Register a user   |
+| POST   | `/login`        | Login and get JWT |
 
-🔹 Guests
-Method	
-GET	
-POST
-DELETE	
-🔹 Episodes
-Method
-GET	
-POST	
-DELETE	
+### 🎤 Guests
+| Method | Endpoint       | Description         |
+|--------|----------------|---------------------|
+| GET    | `/guests`      | Get all guests      |
+| POST   | `/guests`      | Add a new guest     |
+| DELETE | `/guests/<id>` | Delete a guest      |
 
-🔹 Appearances
-Method	
-GET	
-POST	
-DELETE	
+### 🎬 Episodes
+| Method | Endpoint         | Description           |
+|--------|------------------|-----------------------|
+| GET    | `/episodes`      | Get all episodes      |
+| POST   | `/episodes`      | Add a new episode     |
+| DELETE | `/episodes/<id>` | Delete an episode     |
 
+### 👥 Appearances
+| Method | Endpoint             | Description                |
+|--------|----------------------|----------------------------|
+| GET    | `/appearances`       | Get all appearances        |
+| POST   | `/appearances`       | Create an appearance       |
+| DELETE | `/appearances/<id>`  | Delete an appearance       |
 
-
+## Testing Tools
+Use Postman or cURL to test API endpoints.
+Include JWT tokens in the Authorization header as Bearer <token> when accessing protected routes.
 
